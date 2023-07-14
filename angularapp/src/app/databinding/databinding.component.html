@@ -1,0 +1,31 @@
+<p>databinding works!</p>
+
+
+<h1>
+    {{name}}
+</h1>
+
+{{data.name}}
+
+{{4+4}}
+
+
+
+    Property Binding attributes
+<div>
+    <img [src]="imageURL" alt = "" height="100px" width="200px">
+</div>
+
+<div>
+    <button [disabled] = "isDisables" (click) = "saveData()"> Click ME </button>
+</div>
+
+
+<h1>Two-Way Data Binding</h1>
+<div>
+    <input type="text" placeholder="Please enter your Department" [(ngModel)]="department" >
+</div>
+
+<div>
+    {{department}}
+</div>
